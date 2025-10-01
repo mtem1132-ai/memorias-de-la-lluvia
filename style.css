@@ -1,0 +1,91 @@
+/* Fondo y tipografía*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+  color: #6cb999;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Contenedor principal */
+main {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* Título */
+h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #2066a0;
+  text-shadow: 0 0 10px rgba(83, 158, 108, 0.952);
+}
+
+
+/* Descripción */
+p {
+  color: #2b2e5c;
+  font-size: 1.1rem;
+}
+
+/* Botón */
+#playButton {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #2196f3;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+#playButton:hover {
+  background: #42a5f5;
+}
+
+/* Contenedor de imagen y texto */
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Imagen */
+#imagen {
+  max-width: 100%;
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 1s ease, opacity 1.5s ease;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+
+/* Frase */
+#texto {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #413668;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
